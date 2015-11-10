@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O11-84-9iu">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="KPK-cs-3T7">
+            <objects>
+                <viewController id="4ib-CT-yDI" customClass="FBLogInViewController" customModule="DressMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YVe-ud-x3Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="h3y-A6-290"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3CV-rW-UEf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="faO-iw-P0v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lN5-Gm-0eL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1545" y="296"/>
+        </scene>
+        <!--Cloth Picker View Controller-->
+        <scene sceneID="du4-Vk-coX">
+            <objects>
+                <viewController storyboardIdentifier="ClothPickerViewController" id="4WE-BO-grD" customClass="ClothPickerViewController" customModule="DressMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y1P-BZ-Tvd"/>
+                        <viewControllerLayoutGuide type="bottom" id="agR-dY-h7p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QwU-LN-iGX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijr-WG-8BG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2198" y="409"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="GFH-Uc-QU2">
+            <objects>
+                <pageViewController storyboardIdentifier="PairPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="30" navigationOrientation="horizontal" spineLocation="none" id="eUH-0z-fSk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8aq-3i-hCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2858" y="428"/>
+        </scene>
+        <!--Pair View Controller-->
+        <scene sceneID="eDI-ie-KOz">
+            <objects>
+                <viewController storyboardIdentifier="PairViewController" id="r8m-3L-w9H" customClass="PairViewController" customModule="DressMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aj5-yj-6pd"/>
+                        <viewControllerLayoutGuide type="bottom" id="en7-XJ-xVL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qXg-Iw-ssF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xXf-jR-Tmp">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TnN-Bf-vbu">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="290"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x0w-b9-jMF">
+                                        <rect key="frame" x="0.0" y="290" width="600" height="290"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0B-KI-ZqJ" userLabel="Bookmark">
+                                <rect key="frame" x="536" y="40" width="64" height="64"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="SM3-HL-tYb"/>
+                                    <constraint firstAttribute="height" constant="64" id="qyG-bJ-Ss2"/>
+                                </constraints>
+                                <state key="normal" image="Bookmark-unselected"/>
+                                <state key="selected" image="Bookmark"/>
+                                <connections>
+                                    <action selector="likeButtonTapped:" destination="r8m-3L-w9H" eventType="touchUpInside" id="Ydw-gG-mo9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQr-vA-bqj" userLabel="Dislike">
+                                <rect key="frame" x="536" y="124" width="64" height="64"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="5rb-FA-59W"/>
+                                    <constraint firstAttribute="width" constant="64" id="ENi-gF-WBZ"/>
+                                    <constraint firstAttribute="height" constant="64" id="HZm-VK-7iB"/>
+                                    <constraint firstAttribute="width" constant="64" id="vDp-Z2-dW4"/>
+                                </constraints>
+                                <state key="normal" image="dislike-icon"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5rb-FA-59W"/>
+                                        <exclude reference="ENi-gF-WBZ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="dislikeButtonTapped:" destination="r8m-3L-w9H" eventType="touchUpInside" id="7cw-dg-135"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n2-Pd-qth" userLabel="Share">
+                                <rect key="frame" x="536" y="208" width="64" height="64"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="2kD-Kv-Oyg"/>
+                                    <constraint firstAttribute="height" constant="64" id="dZZ-D3-qWo"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="share"/>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="r8m-3L-w9H" eventType="touchUpInside" id="7M4-40-2B9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="n0B-KI-ZqJ" secondAttribute="trailing" id="A0v-Sc-O8H"/>
+                            <constraint firstAttribute="trailing" secondItem="n0B-KI-ZqJ" secondAttribute="trailing" id="AOE-bY-xh7"/>
+                            <constraint firstAttribute="trailing" secondItem="OQr-vA-bqj" secondAttribute="trailing" id="Aab-ef-yZC"/>
+                            <constraint firstItem="OQr-vA-bqj" firstAttribute="top" secondItem="n0B-KI-ZqJ" secondAttribute="bottom" constant="20" id="CRt-Uf-ZDI"/>
+                            <constraint firstAttribute="trailing" secondItem="9n2-Pd-qth" secondAttribute="trailing" id="Fbn-17-NbJ"/>
+                            <constraint firstItem="en7-XJ-xVL" firstAttribute="top" secondItem="xXf-jR-Tmp" secondAttribute="bottom" id="Pqp-nf-24n"/>
+                            <constraint firstItem="9n2-Pd-qth" firstAttribute="top" secondItem="OQr-vA-bqj" secondAttribute="bottom" constant="20" id="QH4-R6-Pzt"/>
+                            <constraint firstItem="n0B-KI-ZqJ" firstAttribute="leading" secondItem="qXg-Iw-ssF" secondAttribute="leadingMargin" constant="257" id="elb-7R-QkU"/>
+                            <constraint firstItem="xXf-jR-Tmp" firstAttribute="leading" secondItem="qXg-Iw-ssF" secondAttribute="leading" id="f6l-NL-MUH"/>
+                            <constraint firstItem="n0B-KI-ZqJ" firstAttribute="top" secondItem="aj5-yj-6pd" secondAttribute="bottom" constant="20" id="lxd-1J-4Md"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OQr-vA-bqj" secondAttribute="trailing" constant="20" id="rjS-6o-Dul"/>
+                            <constraint firstAttribute="trailing" secondItem="xXf-jR-Tmp" secondAttribute="trailing" id="vdi-64-dmo"/>
+                            <constraint firstItem="xXf-jR-Tmp" firstAttribute="top" secondItem="aj5-yj-6pd" secondAttribute="bottom" id="w9D-D7-M8G"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="A0v-Sc-O8H"/>
+                                <exclude reference="elb-7R-QkU"/>
+                                <exclude reference="rjS-6o-Dul"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dislikeButton" destination="OQr-vA-bqj" id="NsY-hH-Z32"/>
+                        <outlet property="likeButton" destination="n0B-KI-ZqJ" id="7N0-uO-nQl"/>
+                        <outlet property="pantImageView" destination="x0w-b9-jMF" id="TUV-RU-0xp"/>
+                        <outlet property="shareButton" destination="9n2-Pd-qth" id="k8K-BK-G46"/>
+                        <outlet property="shirtImageView" destination="TnN-Bf-vbu" id="JPv-ro-gJ9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yZ5-9B-Bfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3551" y="428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nLQ-ed-HIA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O11-84-9iu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Ml-XL-hYM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4ib-CT-yDI" kind="relationship" relationship="rootViewController" id="dJ4-4I-OQm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOQ-4m-pXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733" y="296"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bookmark" width="64" height="64"/>
+        <image name="Bookmark-unselected" width="64" height="64"/>
+        <image name="dislike-icon" width="64" height="64"/>
+        <image name="share" width="64" height="64"/>
+    </resources>
+</document>
